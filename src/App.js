@@ -3,6 +3,8 @@ import './App.css';
 import Navbar from './Components/navbar';
 import Image from './Components/Image';
 import Card from './Components/Card';
+import Model from './Components/Model';
+
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
     <div >
       <Card/>
     </div>
+    
+   
 
     </div>
   );
