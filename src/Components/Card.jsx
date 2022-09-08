@@ -3,6 +3,7 @@ import toast, { Toaster } from 'react-hot-toast';
 
 function Card({Service,Price,GenerateInvoice}) {
     console.log(Service,Price)
+    
 
 
 
