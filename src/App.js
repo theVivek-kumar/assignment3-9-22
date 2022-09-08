@@ -1,9 +1,10 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Navbar from './Components/navbar';
 import Image from './Components/Image';
 import Card from './Components/Card';
 import Model from './Components/Model';
+import CardSection from './Components/CardSection';
 
 
 function App() {
@@ -12,11 +13,9 @@ function App() {
     <Navbar/>
     <Image/>
     <div >
-      <Card/>
     </div>
-    
-   
-
+    <CardSection/>
+    <Model/>  
     </div>
   );
 }

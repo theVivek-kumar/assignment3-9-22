@@ -1,84 +1,167 @@
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.modal-container {
+  backdrop-filter: brightness(0.5);
+  position: fixed;
+  min-width: 10rem;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(255, 0, 0);
+  grid-gap: 2rem;
+  grid-gap: 2rem;
+  grid-gap: 2rem;
+  gap: 2rem;
+  padding: 2rem;
+  z-index: 99;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-.conatiner{
-  width: 30%;
-  height: auto;
-  background-color: rgb(255, 255, 255);
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
-}
-.image{
+.Modal {
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+  color: var(--WHITE);
+  width: 40%;
   padding: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.heading{
-  font-size: 1.5rem;
-  padding: 1rem;
+
+.divider {
+  margin: 5px auto;
+  width: 100%;
+  background-color: gray;
+  height: 1px;
 }
-.flex-flow{
+
+.flex-row{
   display: flex;
-  padding: 1rem;
-  justify-content: space-around;
+  gap: 2rem;
+
+}
+
+.input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid greenyellow;
+  color: white;
+  padding: 0rem 2rem 0.5rem 0.2rem;
+}
+
+.modal--content {
+  padding: 0.5rem;
+  position: relative;
+}
+
+.label {
+  font-size: 1.5rem;
+  margin-bottom: -8px;
+  padding-top: 0.5rem;
+  font-weight: 300;
+}
+
+.close {
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.close:hover {
+  color: red;
+}
+
+.modal-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 .flex{
   display: flex;
-  padding: 1rem;
+  justify-content: space-around;
   align-content: center;
   align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5rem;
 }
-.btn{
-  background-color: yellow;
-  border: none;
-  padding: 1rem;
-  border-radius: 5px;
-  font-size: 1.7rem;
-  color: rgb(255, 0, 0);
-  font-weight: 800;
-}
-.icon{
-  font-size: 1.7rem;
-  color: red;
-}
-.flex-star{
+.flex-cl{
   display: flex;
-  justify-content: flex-start;
-  padding: 1rem;
+  justify-content: space-around;
+  align-content: center;
   align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.checkbox-input {
+  cursor: pointer;
+  display: flex;
+  grid-gap: 1rem;
   gap: 1rem;
-  color: green;
+  align-items: flex-end;
+  justify-content: baseline;
+}
+
+.modal--btn{
+  padding: 0;
+  background-color: rgb(47, 71, 255);
+  padding: .5rem;
+  border-radius: 5px;
+  color: aliceblue;
+}
+
+.checkbox {
+  cursor: pointer;
+  accent-color: rgb(47, 71, 255);
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.addressInput {
+  font-size: 1.5rem;
+}
+
+.btn-modal {
+ 
+  float: right;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: auto;
+  position: relative;
+  right: 0;
+  border: transparent;
+  background:greenyellow ;
+  color: var(--GRAY-80);
+  font: inherit;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 1rem 7rem;
+  transition: 1s;
+}
+
+.outline-btn{
+background: transparent;
+  border:1px solid greenyellow ;
+  color: greenyellow;
+}
+
+.btn-modal:hover {
+  transition: 1s;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.modal-title {
+  margin-top: 1.5rem;
+  color: rgb(152, 208, 253) !important;
+  font-size: 1.5rem;
 }
