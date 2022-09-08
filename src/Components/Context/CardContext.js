@@ -1,5 +1,6 @@
 import React, { useContext,createContext, useState } from 'react'
 
+
 const CartContext= createContext() ;
 const useCartContext = ()=>useContext(CartContext);
 
@@ -8,9 +9,10 @@ function CartProvider({children}){
     const [service, setservice] = useState([])
     const [isOpen,setisOpen]    = useState(false)
     const total = invoice.reduce((acc,curr)=>acc+curr)
+    
 console.log("totall",total)
     return(
-        <CartContext.Provider value={{invoice, setInvoice, service,total, setservice}}>
+        <CartContext.Provider value={{invoice, setInvoice, service,total, setservice,isOpen,setisOpen}}>
             {children}
         </CartContext.Provider>
     )
